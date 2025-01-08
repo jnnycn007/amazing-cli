@@ -1,0 +1,13 @@
+.DS_Store
+## 忽略目录
+node_modules/
+scripts/
+src/
+
+# 忽略指定文件
+.gitignore
+.npmignore
+.env.d.ts
+pnpm-lock.yaml
+tsconfig.json
+

@@ -1,0 +1,57 @@
+{
+  "name": "amazing-cli",
+  "version": "1.1.2",
+  "private": false,
+  "type": "module",
+  "author": "theMuseCatcher",
+  "description": "An amazing front-end template project scaffolding tool.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/themusecatcher/amazing-cli.git"
+  },
+  "keywords": [
+    "Amazing",
+    "Cli",
+    "Vue",
+    "Template"
+  ],
+  "files": [
+    "dist",
+    "package.json",
+    "README.md"
+  ],
+  "bin": {
+    "amazing-cli": "dist/src/index.js"
+  },
+  "scripts": {
+    "start": "pnpm build && node dist/src/index.js",
+    "build": "run-s format clean build-only",
+    "format": "prettier --write src/",
+    "clean": "rimraf dist",
+    "build-only": "tsc",
+    "pub": "sh scripts/publish.sh",
+    "push": "sh scripts/push.sh"
+  },
+  "dependencies": {
+    "chalk": "^5.4.1",
+    "commander": "^13.0.0",
+    "fs-extra": "^11.2.0",
+    "git-pull-or-clone": "^2.0.2",
+    "inquirer": "^12.3.0",
+    "ora": "^8.1.1"
+  },
+  "devDependencies": {
+    "@tsconfig/node22": "^22.0.0",
+    "@types/fs-extra": "^11.0.4",
+    "@types/node": "^22.10.5",
+    "npm-run-all2": "^7.0.2",
+    "prettier": "^3.4.2",
+    "rimraf": "^6.0.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.7.2"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/themusecatcher/amazing-cli/issues"
+  }
+}
