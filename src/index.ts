@@ -1,5 +1,4 @@
 #!/usr/bin/env node
-
 import { Command } from 'commander' // 命令行自定义指令
 const program = new Command()
 import ora from 'ora' // 控制台 loading 样式
