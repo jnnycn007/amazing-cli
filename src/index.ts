@@ -28,7 +28,7 @@ program
         type: 'input',
         name: 'name',
         message: 'Project name:',
-        default: 'vue-project'
+        default: 'template-project'
       })
       projectName = name // 赋值输入的项目名称
     }
